@@ -2,12 +2,8 @@
 package rwcipher
 
 import(
-    //"os"
     "errors"
-    //"encoding/json"
-    //"encoding/csv"
     "fmt"
-
     "golang.org/x/crypto/ssh/terminal"
 )
 
