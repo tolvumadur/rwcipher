@@ -1,5 +1,5 @@
-module github.com/jeyrey/rwcipher
+module github.com/tolvumadur/rwcipher
 
-go 1.14
+go 1.15
 
-require golang.org/x/crypto v0.0.0-20200604202706-70a84ac30bf9
+require golang.org/x/crypto v0.17.0
