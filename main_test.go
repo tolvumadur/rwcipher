@@ -1,5 +1,5 @@
 
-package rwcipher_test
+package rwcipher
 
 import "testing"
 

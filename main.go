@@ -10,6 +10,11 @@ import(
 // Usually read from STDIN (0) but can be changed for testing
 var terminalFD int = 0
 
+func Hello(name string) string {
+    message := fmt.Sprintf("Hi %v, Welcome to the RWCIPHER read/writer.\nBeware of race conditions", name)
+    return message
+}
+
 // Async read an encrypted file
 func ReadEncRaw(path string, killswitch chan bool ) chan byte {
     reader := make(chan byte, 64000000) // 64 MB buffer
