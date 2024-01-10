@@ -106,7 +106,6 @@ func encBytes(plaintext []byte, pw []byte) (ciphertext []byte, err error) {
 	}
 
 	//Choose a random salt
-	//This hack reduces the security of the password hash,
 	salt := make([]byte, 16)
 	_, err = io.ReadFull(rand.Reader, salt)
 	if err != nil {
